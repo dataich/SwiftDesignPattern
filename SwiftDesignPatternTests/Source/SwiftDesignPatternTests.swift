@@ -10,4 +10,12 @@ import Cocoa
 import XCTest
 
 class SwiftDesignPatternTests: XCTestCase {
+  
+  func testSingleton() {
+    // let instance = Singleton() //cannot call init()
+    
+    let instance1 = Singleton.shared
+    let instance2 = Singleton.shared
+    XCTAssertTrue(instance1 === instance2, "instance1 === instance2")
+  }
 }
