@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		0A6050161A29898400B1ECCE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050151A29898400B1ECCE /* Singleton.swift */; };
 		0A6050171A29898900B1ECCE /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050151A29898400B1ECCE /* Singleton.swift */; };
+		0A60501A1A298FFA00B1ECCE /* JobComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050191A298FFA00B1ECCE /* JobComponent.swift */; };
+		0A6050231A29941100B1ECCE /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050221A29941100B1ECCE /* Job.swift */; };
+		0A6050251A299BFA00B1ECCE /* JobGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050241A299BFA00B1ECCE /* JobGroup.swift */; };
+		0A6050261A299CA900B1ECCE /* JobComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050191A298FFA00B1ECCE /* JobComponent.swift */; };
+		0A6050271A299CA900B1ECCE /* Job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050221A29941100B1ECCE /* Job.swift */; };
+		0A6050281A299CA900B1ECCE /* JobGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6050241A299BFA00B1ECCE /* JobGroup.swift */; };
 		0A81E95E1A297EB600E70DB3 /* SwiftDesignPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A81E95D1A297EB600E70DB3 /* SwiftDesignPattern.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A81E9841A2981F900E70DB3 /* SwiftDesignPatternTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A81E9831A2981F900E70DB3 /* SwiftDesignPatternTests.swift */; };
 /* End PBXBuildFile section */
@@ -25,6 +31,9 @@
 
 /* Begin PBXFileReference section */
 		0A6050151A29898400B1ECCE /* Singleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		0A6050191A298FFA00B1ECCE /* JobComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobComponent.swift; sourceTree = "<group>"; };
+		0A6050221A29941100B1ECCE /* Job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Job.swift; sourceTree = "<group>"; };
+		0A6050241A299BFA00B1ECCE /* JobGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JobGroup.swift; sourceTree = "<group>"; };
 		0A81E9581A297EB500E70DB3 /* SwiftDesignPattern.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftDesignPattern.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A81E95D1A297EB600E70DB3 /* SwiftDesignPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftDesignPattern.h; sourceTree = "<group>"; };
 		0A81E9631A297EB600E70DB3 /* SwiftDesignPatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDesignPatternTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +60,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A6050181A298F1300B1ECCE /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				0A6050191A298FFA00B1ECCE /* JobComponent.swift */,
+				0A6050221A29941100B1ECCE /* Job.swift */,
+				0A6050241A299BFA00B1ECCE /* JobGroup.swift */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
 		0A81E94E1A297EB500E70DB3 = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0A81E9751A297EFC00E70DB3 /* Singleton */,
+				0A6050181A298F1300B1ECCE /* Composite */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -235,6 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A60501A1A298FFA00B1ECCE /* JobComponent.swift in Sources */,
+				0A6050251A299BFA00B1ECCE /* JobGroup.swift in Sources */,
+				0A6050231A29941100B1ECCE /* Job.swift in Sources */,
 				0A6050161A29898400B1ECCE /* Singleton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +268,9 @@
 			files = (
 				0A81E9841A2981F900E70DB3 /* SwiftDesignPatternTests.swift in Sources */,
 				0A6050171A29898900B1ECCE /* Singleton.swift in Sources */,
+				0A6050261A299CA900B1ECCE /* JobComponent.swift in Sources */,
+				0A6050281A299CA900B1ECCE /* JobGroup.swift in Sources */,
+				0A6050271A299CA900B1ECCE /* Job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
